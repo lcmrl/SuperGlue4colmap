@@ -6,17 +6,17 @@ To obtain SuperPoint keypoints and matches in the COLMAP format:
 - run python superglue2colmap.py
 
 Now keypoints in the COLMAP format are present in the colmap_desc directory.
-The matches fro COLMAP are in superglue_matches.txt file.
+The matches from COLMAP are in superglue_matches.txt file.
 
 To import them in COLMAP, open the gui, then:
-- File > New project, here you create a new empty database and select the image folder
+- File > New project, here you can create a new empty database and select the image folder
 - Processing > Feature extraction, go to the Import window, select the path to colmap_desc directory and click on Extract
-- Processing > Feature matching, go to the Custom window, select type "Inlier feature matches", with "Select file" select the superglue_matches.txt file, click to "Run"
+- Processing > Feature matching, go to the Custom window, select type "Inlier feature matches", then with "Select file" select the superglue_matches.txt file, click to "Run"
 
 If you need to change the interior parameters:
 -  Processing > Database management
 - Select the Cameras window
-- Click on the camera you want to modify, you can set a different camera model, while eith double click on params you can manually change the interiors
+- Click on the camera you want to modify, you can set a different camera model, while with double click on params you can manually change the interiors
 
 Finaly: Reconstruction > Start Reconstruction
 
